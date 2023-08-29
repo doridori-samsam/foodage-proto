@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "NanumSquareNeo-Variable";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+  font-family: "NanumSquareNeo-Variable";
+}
+
+#page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 120px;
+}
+
+.layer {
+  width: 360px;
+  height: 800px;
+  background-color: #ebf5eb;
+  font-family: "Pretendard-Regular";
+}
+
+.search-bar {
+  margin: 1rem auto;
+  width: 310px;
+  height: 40px;
+  border-radius: 5px;
+  background: #ebf5eb;
+  box-shadow: inset 5px 5px 10px #cacabf, inset -5px -5px 10px #ffffff;
+}
+.search-bar .placeholder {
+  font-size: 0.8rem;
+  border: 1px solid red;
+}/*# sourceMappingURL=index.css.map */

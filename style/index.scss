@@ -1,0 +1,38 @@
+@import "fonts";
+@import "variables";
+
+h1 {
+  font-family: $font-nanum;
+}
+
+#page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 120px;
+}
+.layer {
+  width: 360px;
+  height: 800px;
+  //border: 1px solid red;
+  background-color: $bg-color;
+  font-family: $font-pretendard;
+}
+
+//component...
+.search-bar {
+  //border: 1px solid black;
+  margin: 1rem auto;
+  width: 310px;
+  height: 40px;
+  border-radius: 5px;
+  background: #ebf5eb;
+  box-shadow: inset 5px 5px 10px #cacabf, inset -5px -5px 10px #ffffff;
+
+  .placeholder {
+    font-size: 0.8rem;
+    border: 1px solid red;
+  }
+}
