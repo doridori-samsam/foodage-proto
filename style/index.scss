@@ -14,25 +14,87 @@ h1 {
   gap: 120px;
 }
 .layer {
+  padding: 2rem;
+  box-sizing: border-box;
   width: 360px;
   height: 800px;
   //border: 1px solid red;
-  background-color: $bg-color;
-  font-family: $font-pretendard;
+  background-color: rgba($bg-color, 0.6);
+  font-family: $font-nanum;
 }
 
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    color: rgb(87, 87, 87);
+  }
+}
 //component...
 .search-bar {
   //border: 1px solid black;
-  margin: 1rem auto;
-  width: 310px;
-  height: 40px;
+  margin: 0 auto;
+  width: 300px;
+  min-height: 2.2rem;
   border-radius: 5px;
-  background: #ebf5eb;
-  box-shadow: inset 5px 5px 10px #cacabf, inset -5px -5px 10px #ffffff;
+  background: $bg-color;
+  box-shadow: inset 5px 5px 10px #cfcbb2, inset -5px -5px 10px #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   .placeholder {
+    background: none;
+    box-shadow: none;
     font-size: 0.8rem;
-    border: 1px solid red;
+    width: fit-content;
+    height: fit-content;
+    color: darkgray;
+    margin-left: 1rem;
+    //border: 1px solid red;
+  }
+
+  .search-icon {
+    color: red;
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+  }
+}
+
+.main-first {
+  box-sizing: border-box;
+  //border: 1px solid black;
+  margin-top: 3rem;
+
+  h3 {
+    font-size: 1rem;
+    font-family: $font-bold;
+    color: rgb(63, 63, 63);
+    margin-bottom: 2rem;
+  }
+
+  .main-thumbnail {
+    display: inline-block;
+    margin-right: 1rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 20px;
+    //border: 1px solid red;
+    box-shadow: 5px 5px 10px #bec6be, -5px -5px 10px #ffffff;
+  }
+  .one {
+    //border: 1px solid red;
+    background-image: url("https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_center,w_730,h_913/k%2FPhoto%2FRecipes%2F05-2021_Garlic_fried_rice_Silog_sinangag%2Fk-photo-2021-05-garlic-fried-rice-02");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .two {
+    background-image: url("https://publish.purewow.net/wp-content/uploads/sites/2/2022/07/easy-snacks-to-make-at-home-ritz-with-whipped-honey-ricotta-and-bacon-recipe-hero.jpeg?fit=728%2C921");
+    background-size: cover;
+    background-position: center;
   }
 }
